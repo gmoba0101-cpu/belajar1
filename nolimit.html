@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="MAGNUMBET|LINK ALTERNATIF|MAGNUMBET LOGIN|SLOT GACOR 2026.">
+    <title>magnumbet|login magnumbet|Mainkan sekarang secara online di MAGNUMBET.com dengan bonus 100% pada deposit pertama Anda</title>
+    <style>
+        
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background-color: #0b1a75;
+            color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        /* Header / Navbar */
+        header {
+            width: 100%;
+            background-color: #0b1a75;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 50px;
+            border-bottom: 2px solid #fa010e;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: bold;
+            font-size: 20px;
+            color: #ffffff;
+            letter-spacing: 1px;
+            text-decoration: none;
+        }
+
+        .logo-icon {
+            width: 30px;
+            height: 30px;
+            background-color: #dcdcdc;
+            clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+        }
+
+        .nav-buttons {
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 12px;
+            cursor: pointer;
+        }
+
+        .nav-item span:first-child {
+            font-size: 18px;
+            margin-bottom: 2px;
+        }
+
+        /* Container Main */
+        .container {
+            width: 100%;
+            max-width: 1000px;
+            padding: 20px 15px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 28px;
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+
+        .description {
+            font-size: 11px;
+            color: #cccccc;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+
+        /* Provider Bar */
+        .provider-bar {
+            background-color: #0b1a75;
+            border-radius: 5px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 10px;
+            margin-bottom: 8px;
+            overflow-x: auto;
+        }
+
+        .provider-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: 11px;
+            color: #ffffff;
+            text-decoration: none;
+            cursor: pointer;
+            min-width: 80px;
+            transition: transform 0.2s, opacity 0.2s;
+        }
+
+        .provider-item:hover, .provider-item.active {
+            opacity: 0.8;
+            transform: translateY(-2px);
+        }
+
+        .provider-icon {
+            width: 40px;
+            height: 40px;
+            background-color: #fa010e;
+            border-radius: 50%;
+            margin-bottom: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 12px;
+        }
+
+        .subtext {
+            font-size: 10px;
+            font-style: italic;
+            color: #aaaaaa;
+            margin-bottom: 20px;
+        }
+
+        /* Content Area */
+        .content-box {
+            background-color: #0b1a75;
+            border: 1px solid #fa010e;
+            border-radius: 10px;
+            padding: 20px 15px;
+        }
+
+        /* Games Grid */
+        .games-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 15px;
+        }
+
+        /* Game Card */
+        .game-card {
+            background-color: #058b00;
+            border-radius: 12px;
+            padding: 6px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            position: relative;
+            text-decoration: none;
+            transition: transform 0.2s;
+        }
+
+        .game-card:hover {
+            transform: scale(1.03);
+        }
+
+        .image-container {
+            position: relative;
+            width: 100%;
+            padding-top: 100%;
+            border-radius: 8px;
+            overflow: hidden;
+            margin-bottom: 6px;
+            background-color: #f8f4f4;
+        }
+
+        .image-container img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .badge {
+            position: absolute;
+            top: 2px;
+            left: 2px;
+            background-color: #0b1a75;
+            color: #ffffff;
+            font-size: 9px;
+            font-weight: bold;
+            padding: 2px 5px;
+            border-radius: 3px;
+            text-transform: uppercase;
+            transform: rotate(-15deg);
+            z-index: 2;
+        }
+
+        .badge.top {
+            background-color: #ffaa00;
+        }
+
+        /* Progress Bar */
+        .progress-container {
+            width: 100%;
+            height: 16px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 4px;
+        }
+
+        .progress-bar.high {
+            height: 100%;
+            background: linear-gradient(90deg, #2ecc71, #27ae60);
+            border-radius: 8px 0 0 8px;
+        }
+
+        .progress-bar.medium {
+            height: 100%;
+            background: linear-gradient(90deg, #f1c40f, #f39c12);
+            border-radius: 8px 0 0 8px;
+        }
+
+        .progress-text {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 10px;
+            font-weight: bold;
+            color: #f8f7f7;
+        }
+
+        .game-title {
+            font-size: 9px;
+            color: #ffffff;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            width: 100%;
+        }
+
+        /* Responsive Layout */
+        @media (max-width: 768px) {
+            .games-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+            header {
+                padding: 10px 15px;
+            }
+            h1 {
+                font-size: 20px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .games-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+    </style>
+        }
+        </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+    </style>
+</head>
+<body>
+    <!-- Header / Nav -->
+    <header>
+        <a href="index.html" class="logo">
+            <div class="logo-icon"></div>
+            <h2>MAGNUMBET</h2>
+        </a>
+        <div class="nav-buttons">
+            <a href="http://magnumbetwin.xyz" class="nav-item">
+                <span>🔑</span>
+                <span>link</span>
+            </a>
+            <a href="http://magnumbetwin.xyz" class="nav-item">
+                <span>📝</span>
+                <span>alternatif</span>
+            </a>
+            <a href="http://magnumbetwin.xyz" class="nav-item">
+                <span>🎁</span>
+                <span>login</span>
+            </a>
+            <a href="https://cdn.hellox.org/c/site_iMFIV8Jt3TnaxD44" class="nav-item">
+                <span>💬</span>
+                <span>Livechat</span>
+            </a>
+        </div>
+    </header>
+
+    <!-- Main Container -->
+    <div class="container">
+        <h1>alternatif login magnumbet</h1>
+        
+        <p class="description">
+            slot gacor bonus 100% member baru daftar sekarang!!!
+        </p>
+
+                <!-- Provider Bar dengan Link -->
+        <div class="provider-bar">
+            <a href="pragmatic.html" class="provider-item active">
+                <div class="provider-icon" style="background-color: rgba(255, 255, 255, 0.5);">PP</div>
+                <span>Pragmatic Play</span>
+            </a>
+            <a href="pppop.html" class="provider-item">
+                <div class="provider-icon">POP</div>
+                <span>PP Pop</span>
+            </a>
+            <a href="pgsoft.html" class="provider-item">
+                <div class="provider-icon">PG</div>
+                <span>PG Soft</span>
+            </a>
+            <a href="slot88.html" class="provider-item">
+                <div class="provider-icon">S88</div>
+                <span>Slot88 x PP</span>
+            </a>
+            <a href="fachai.html" class="provider-item">
+                <div class="provider-icon">FC</div>
+                <span>Fachai</span>
+            </a>
+            <a href="nolimit.html" class="provider-item">
+                <div class="provider-icon">JL</div>
+                <span>nolimit city</span>
+            </a>
+        </div>
+
+        <p class="subtext">Nilai dari RTP ini diambil dari persentase kemenangan member dan diperbarui secara otomatis.</p>
+
+        <!-- Content Area -->
+        <div class="content-box">
+            <div class="games-grid">
+
+                <!-- Game 1 -->
+                <a href="http://magnumbetwin.xyz" class="game-card">
+                    <div class="image-container">
+                        <span class="badge top">TOP</span>
+                        <img src="https://dsuown9evwz4y.cloudfront.net/Images/providers/NOLIMITCITY/fireinthehole300.jpg" alt="Fire">
+                    </div>
+                    <div class="progress-container">
+                        <div class="progress-bar high" style="width: 98%;"></div>
+                        <div class="progress-text">98%</div>
+                    </div>
+                    <span class="game-title">Fire in the Hole 3</span>
+                </a>
+
+                <!-- Game 2 -->
+                <a href="http://magnumbetwin.xyz" class="game-card">
+                    <div class="image-container">
+                        <span class="badge top">TOP</span>
+                        <img src="https://dsuown9evwz4y.cloudfront.net/Images/providers/NOLIMITCITY/fireinthehole200.jpg" alt="Fire">
+                    </div>
+                    <div class="progress-container">
+                        <div class="progress-bar high" style="width: 95%;"></div>
+                        <div class="progress-text">95%</div>
+                    </div>
+                    <span class="game-title">Fire in the Hole 2</span>
+                </a>
+
+                <!-- Game 3 -->
+                <a href="http://magnumbetwin.xyz" class="game-card">
+                    <div class="image-container">
+                        <span class="badge top">TOP</span>
+                        <img src="https://dsuown9evwz4y.cloudfront.net/Images/providers/NOLIMITCITY/thecrypt00000000.jpg" alt="Crypt">
+                    </div>
+                    <div class="progress-container">
+                        <div class="progress-bar high" style="width: 93%;"></div>
+                        <div class="progress-text">93%</div>
+                    </div>
+                    <span class="game-title">The Crypt</span>
+                </a>
+
+                <!-- Game 4 -->
+                <a href="http://magnumbetwin.xyz" class="game-card">
+                    <div class="image-container">
+                        <span class="badge">NEW</span>
+                        <img src="https://dsuown9evwz4y.cloudfront.net/Images/providers/NOLIMITCITY/bangkokhilton000.jpg" alt="Bangkok">
+                    </div>
+                    <div class="progress-container">
+                        <div class="progress-bar high" style="width: 90%;"></div>
+                        <div class="progress-text">90%</div>
+                    </div>
+                    <span class="game-title">Bangkok Hilton</span>
+                </a>
+
+                <!-- Game 5 -->
+                <a href="http://magnumbetwin.xyz" class="game-card">
+                    <div class="image-container">
+                        <span class="badge top">TOP</span>
+                        <img src="https://dsuown9evwz4y.cloudfront.net/Images/providers/NOLIMITCITY/bruteforce000000.jpg" alt="Brute Force">
+                    </div>
+                    <div class="progress-container">
+                        <div class="progress-bar high" style="width: 88%;"></div>
+                        <div class="progress-text">88%</div>
+                    </div>
+                    <span class="game-title">Brute Force</span>
+                </a>
+
+                <!-- Game 6 -->
+                <a href="http://magnumbetwin.xyz" class="game-card">
+                    <div class="image-container">
+                        <span class="badge">VIRAL</span>
+                        <img src="https://dsuown9evwz4y.cloudfront.net/Images/providers/NOLIMITCITY/beheaded00000000.jpg" alt="Beheaded">
+                    </div>
+                    <div class="progress-container">
+                        <div class="progress-bar high" style="width: 85%;"></div>
+                        <div class="progress-text">85%</div>
+                    </div>
+                    <span class="game-title">Beheaded</span>
+                </a>
+
+                <!-- Game 7 -->
+                <a href="http://magnumbetwin.xyz" class="game-card">
+                    <div class="image-container">
+                        <span class="badge">NEW</span>
+                        <img src="https://dsuown9evwz4y.cloudfront.net/Images/providers/NOLIMITCITY/xwayshoarder2000.jpg" alt="xWays Hoarder 2">
+                    </div>
+                    <div class="progress-container">
+                        <div class="progress-bar high" style="width: 82%;"></div>
+                        <div class="progress-text">82%</div>
+                    </div>
+                    <span class="game-title">xWays Hoarder 2</span>
+                </a>
+
+                <!-- Game 8 -->
+                <a href="http://magnumbetwin.xyz" class="game-card">
+                    <div class="image-container">
+                        <img src="https://dsuown9evwz4y.cloudfront.net/Images/providers/NOLIMITCITY/bloodandshadow00.jpg" alt="Blood & Shadow">
+                    </div>
+                    <div class="progress-container">
+                        <div class="progress-bar high" style="width: 80%;"></div>
+                        <div class="progress-text">80%</div>
+                    </div>
+                    <span class="game-title">Blood & Shadow</span>
+                </a>
+
+                <!-- Game 9 -->
+                <a href="http://magnumbetwin.xyz" class="game-card">
+                    <div class="image-container">
+                        <img src="https://dsuown9evwz4y.cloudfront.net/Images/providers/NOLIMITCITY/punkrocker200000.jpg" alt="Punk Rocker 2">
+                    </div>
+                    <div class="progress-container">
+                        <div class="progress-bar medium" style="width: 76%;"></div>
+                        <div class="progress-text">76%</div>
+                    </div>
+                    <span class="game-title">Punk Rocker 2</span>
+                </a>
+
+                <!-- Game 10 -->
+                <a href="http://magnumbetwin.xyz" class="game-card">
+                    <div class="image-container">
+                        <img src="https://dsuown9evwz4y.cloudfront.net/Images/providers/NOLIMITCITY/harlequin0000000.jpg" alt="Pirate King">
+                    </div>
+                    <div class="progress-container">
+                        <div class="progress-bar medium" style="width: 73%;"></div>
+                        <div class="progress-text">73%</div>
+                    </div>
+                    <span class="game-title">Harlequin Carnival</span>
+                </a>
+
+                <!-- Game 11 -->
+                <a href="http://magnumbetwin.xyz" class="game-card">
+                    <div class="image-container">
+                        <img src="https://dsuown9evwz4y.cloudfront.net/Images/providers/NOLIMITCITY/buffalohunter000.jpg" alt="Buffalo Hunter">
+                    </div>
+                    <div class="progress-container">
+                        <div class="progress-bar medium" style="width: 70%;"></div>
+                        <div class="progress-text">70%</div>
+                    </div>
+                    <span class="game-title">Buffalo Hunter</span>
+                </a>
+
+                <!-- Game 12 -->
+                <a href="http://magnumbetwin.xyz" class="game-card">
+                    <div class="image-container">
+                        <img src="https://dsuown9evwz4y.cloudfront.net/Images/providers/NOLIMITCITY/dasxboot00000000.jpg" alt="Das xBoot">
+                    </div>
+                    <div class="progress-container">
+                        <div class="progress-bar medium" style="width: 67%;"></div>
+                        <div class="progress-text">67%</div>
+                    </div>
+                    <span class="game-title">Das xBoot</span>
+                </a>
+
+                <!-- Game 13 -->
+                <a href="http://magnumbetwin.xyz" class="game-card">
+                    <div class="image-container">
+                        <img src="https://dsuown9evwz4y.cloudfront.net/Images/providers/NOLIMITCITY/kennethmustdie00.jpg" alt="Kenneth Must Die">
+                    </div>
+                    <div class="progress-container">
+                        <div class="progress-bar medium" style="width: 64%;"></div>
+                        <div class="progress-text">64%</div>
+                    </div>
+                    <span class="game-title">Kenneth Must Die</span>
+                </a>
+
+                <!-- Game 14 -->
+                <a href="http://magnumbetwin.xyz" class="game-card">
+                    <div class="image-container">
+                        <img src="https://dsuown9evwz4y.cloudfront.net/Images/providers/NOLIMITCITY/mental0000000000.jpg" alt="Mental">
+                    </div>
+                    <div class="progress-container">
+                        <div class="progress-bar medium" style="width: 62%;"></div>
+                        <div class="progress-text">62%</div>
+                    </div>
+                    <span class="game-title">Mental</span>
+                </a>
+
+                <!-- Game 15 -->
+                <a href="http://magnumbetwin.xyz" class="game-card">
+                    <div class="image-container">
+                        <img src="https://dsuown9evwz4y.cloudfront.net/Images/providers/NOLIMITCITY/gatorhunters0000.jpg" alt="Gator Hunters">
+                    </div>
+                    <div class="progress-container">
+                        <div class="progress-bar medium" style="width: 60%;"></div>
+                        <div class="progress-text">60%</div>
+                    </div>
+                    <span class="game-title">Gator Hunters</span>
+                </a>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  // Mengubah semua link yang memiliki class "game-card"
+  const targetLinks = document.querySelectorAll("a.game-card");
+  
+  targetLinks.forEach(link => {
+    link.href = "https://magnumbetwin.xyz/register?ref=1376579";
+  });
+});
+</script>
+</body>
