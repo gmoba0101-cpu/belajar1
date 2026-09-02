@@ -1,100 +1,93 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="robots" content="index, follow">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="MAGNUMBET|LINK ALTERNATIF|MAGNUMBET LOGIN|SLOT GACOR 2026.">
-    <title>magnumbet|login magnumbet|Mainkan sekarang secara online di MAGNUMBET.com dengan bonus 100% pada deposit pertama Anda</title>
-    <style>
-        
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-            font-family: Arial, Helvetica, sans-serif;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Magnumbet Mobile Demo</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    }
 
-        body {
-            background-color: #0b1a75;
-            color: #ffffff;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            min-height: 100vh;
-        }
+    body {
+      background-color: #06102e;
+      color: #ffffff;
+      padding-top: 60px;
+    }
 
-        /* Header / Navbar */
-        header {
-            width: 100%;
-            background-color: #0b1a75;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 10px 50px;
-            border-bottom: 2px solid #fa010e;
-        }
+    /* HEADER */
+    .header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 60px;
+      background-color: #030a21;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 15px;
+      z-index: 1000;
+      border-bottom: 1px solid #10204d;
+    }
 
-        .logo {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            font-weight: bold;
-            font-size: 20px;
-            color: #ffffff;
-            letter-spacing: 1px;
-            text-decoration: none;
-        }
+    .hamburger-btn {
+      background: none;
+      border: none;
+      color: #ffffff;
+      font-size: 26px;
+      cursor: pointer;
+      padding: 5px 10px;
+      z-index: 1001;
+    }
 
-        .logo-icon {
-            width: 30px;
-            height: 30px;
-            background-color: #dcdcdc;
-            clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
-        }
+    .logo {
+      font-weight: 900;
+      font-size: 18px;
+      letter-spacing: 1px;
+      color: #ffffff;
+    }
 
-        .nav-buttons {
-            display: flex;
-            gap: 20px;
-        }
+    .header-actions {
+      display: flex;
+      gap: 8px;
+    }
 
-        .nav-item {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            color: #ffffff;
-            text-decoration: none;
-            font-size: 12px;
-            cursor: pointer;
-        }
+    .btn-login {
+      background-color: #e6ab08;
+      color: #000;
+      border: none;
+      padding: 6px 12px;
+      font-size: 12px;
+      font-weight: bold;
+      border-radius: 4px;
+      cursor: pointer;
+    }
 
-        .nav-item span:first-child {
-            font-size: 18px;
-            margin-bottom: 2px;
-        }
+    /* SIDEBAR NAVIGATOR */
+    .sidebar {
+      position: fixed;
+      top: 60px;
+      left: 0;
+      width: 90px;
+      height: calc(100vh - 60px);
+      background-color: #030a21;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      transform: translateX(-100%);
+      transition: transform 0.3s ease;
+      z-index: 999;
+      border-right: 1px solid #10204d;
+    }
 
-        /* Container Main */
-        .container {
-            width: 100%;
-            max-width: 1000px;
-            padding: 20px 15px;
-            text-align: center;
-        }
-
-        h1 {
-            font-size: 28px;
-            margin-bottom: 15px;
-            font-weight: bold;
-        }
-
-        .description {
-            font-size: 11px;
-            color: #cccccc;
-            line-height: 1.5;
-            margin-bottom: 20px;
-        }
-
-        /* Provider Bar */
+    .sidebar.active {
+      transform: translateX(0);
+    }
+    /* Provider Bar */
         .provider-bar {
             background-color: #0b1a75;
             border-radius: 5px;
@@ -136,189 +129,175 @@
             font-size: 12px;
         }
 
-        .subtext {
-            font-size: 10px;
-            font-style: italic;
-            color: #aaaaaa;
-            margin-bottom: 20px;
-        }
+    .nav-item {
+      width: 100%;
+      padding: 15px 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-decoration: none;
+      color: #8fa0c9;
+      font-size: 10px;
+      font-weight: bold;
+      border-bottom: 1px solid #0b1942;
+    }
 
-        /* Content Area */
-        .content-box {
-            background-color: #0b1a75;
-            border: 1px solid #fa010e;
-            border-radius: 10px;
-            padding: 20px 15px;
-        }
+    .nav-item:hover, .nav-item.active {
+      color: #ffffff;
+      background-color: #0b1a4a;
+    }
 
-        /* Games Grid */
-        .games-grid {
-            display: grid;
-            grid-template-columns: repeat(5, 1fr);
-            gap: 15px;
-        }
+    .nav-item .icon {
+      font-size: 20px;
+      margin-bottom: 4px;
+    }
 
-        /* Game Card */
-        .game-card {
-            background-color: #058b00;
-            border-radius: 12px;
-            padding: 6px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-            position: relative;
-            text-decoration: none;
-            transition: transform 0.2s;
-        }
+    /* OVERLAY */
+    .overlay {
+      position: fixed;
+      top: 60px;
+      left: 0;
+      width: 100vw;
+      height: calc(100vh - 60px);
+      background: rgba(0, 0, 0, 0.7);
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.3s ease;
+      z-index: 998;
+    }
 
-        .game-card:hover {
-            transform: scale(1.03);
-        }
+    .overlay.active {
+      opacity: 1;
+      visibility: visible;
+    }
 
-        .image-container {
-            position: relative;
-            width: 100%;
-            padding-top: 100%;
-            border-radius: 8px;
-            overflow: hidden;
-            margin-bottom: 6px;
-            background-color: #f8f4f4;
-        }
+    /* MAIN CONTENT & GAME GRID */
+    .container {
+      padding: 15px;
+      max-width: 600px;
+      margin: 0 auto;
+    }
 
-        .image-container img {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
+    .section-title {
+      font-size: 14px;
+      font-weight: bold;
+      margin-bottom: 12px;
+      color: #ffcc00;
+      text-transform: uppercase;
+    }
 
-        .badge {
-            position: absolute;
-            top: 2px;
-            left: 2px;
-            background-color: #0b1a75;
-            color: #ffffff;
-            font-size: 9px;
-            font-weight: bold;
-            padding: 2px 5px;
-            border-radius: 3px;
-            text-transform: uppercase;
-            transform: rotate(-15deg);
-            z-index: 2;
-        }
+    .game-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+    }
 
-        .badge.top {
-            background-color: #ffaa00;
-        }
+    .game-card {
+      background-color: #0b1942;
+      border-radius: 8px;
+      overflow: hidden;
+      border: 1px solid #182b66;
+    }
 
-        /* Progress Bar */
-        .progress-container {
-            width: 100%;
-            height: 16px;
-            background-color: #ffffff;
-            border-radius: 8px;
-            overflow: hidden;
-            position: relative;
-            margin-bottom: 4px;
-        }
+    .game-img {
+      width: 100%;
+      height: 110px;
+      background-size: cover;
+      background-position: center;
+      position: relative;
+    }
 
-        .progress-bar.high {
-            height: 100%;
-            background: linear-gradient(90deg, #2ecc71, #27ae60);
-            border-radius: 8px 0 0 8px;
-        }
+    .badge {
+      position: absolute;
+      top: 5px;
+      left: 5px;
+      background-color: #ff0055;
+      color: #fff;
+      font-size: 9px;
+      font-weight: bold;
+      padding: 2px 6px;
+      border-radius: 3px;
+    }
 
-        .progress-bar.medium {
-            height: 100%;
-            background: linear-gradient(90deg, #f1c40f, #f39c12);
-            border-radius: 8px 0 0 8px;
-        }
+    .game-info {
+      padding: 8px;
+    }
 
-        .progress-text {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 10px;
-            font-weight: bold;
-            color: #f8f7f7;
-        }
+    .game-name {
+      font-size: 11px;
+      font-weight: bold;
+      margin-bottom: 6px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
 
-        .game-title {
-            font-size: 9px;
-            color: #ffffff;
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            width: 100%;
-        }
+    /* BAR RTP */
+    .rtp-container {
+      background-color: #030a21;
+      border-radius: 10px;
+      height: 16px;
+      position: relative;
+      overflow: hidden;
+    }
 
-        /* Responsive Layout */
-        @media (max-width: 768px) {
-            .games-grid {
-                grid-template-columns: repeat(3, 1fr);
-            }
-            header {
-                padding: 10px 15px;
-            }
-            h1 {
-                font-size: 20px;
-            }
-        }
+    .rtp-bar {
+      height: 100%;
+      border-radius: 10px;
+      transition: width 0.5s ease;
+    }
 
-        @media (max-width: 480px) {
-            .games-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-        }
-        </style>
-    <link rel="stylesheet" href="style.css">
-</head>
-    </style>
+    .rtp-text {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 10px;
+      font-weight: bold;
+      color: #ffffff;
+      text-shadow: 1px 1px 2px #000;
+      
+    }
+  </style>
 </head>
 <body>
 
+  <!-- HEADER -->
+  <header class="header">
+    <button id="hamburgerBtn" class="hamburger-btn">☰</button>
+    <div class="logo">MAGNUMBET</div>
+    <div class="header-actions">
+      <button class="btn-login">LOGIN</button>
+    </div>
+  </header>
 
-    <!-- Header / Nav -->
-    <header>
-       <div class="nav-buttons">
-        <a href="http://magnumbetwin.xyz" class="logo">
-            <div class="logo-icon"></div>
-            <h2>MAGNUMBET</h2>
-            <a>
-            <a href="http://magnumbetwin.xyz" class="nav-item">
-                <span>🔑</span>
-                <span>link</span>
-            </a>
-            <a href="http://magnumbetwin.xyz" class="nav-item">
-                <span>📝</span>
-                <span>alternatif</span>
-            </a>
-            <a href="http://magnumbetwin.xyz" class="nav-item">
-                <span>🎁</span>
-                <span>login</span>
-            </a>
-            <a href="https://cdn.hellox.org/c/site_iMFIV8Jt3TnaxD44" class="nav-item">
-                <span>💬</span>
-                <span>Livechat</span>
-            </a>
-        </div>
-    </header>
-
-    <!-- Main Container -->
-    <div class="container">
-        <h1>Mainkan sekarang secara online di MAGNUMBET.com dengan bonus 100% pada deposit pertama Anda. Raih kemenangan sekarang dalam taruhan olahraga online, taruhan langsung (live), dan slot/kasino!</h1>
-        
-        <p class="description">
-        </p>
-
+  <!-- SIDEBAR NAVIGATION -->
+  <aside id="sidebar" class="sidebar">
+    <a href="#" class="nav-item active">
+      <span class="icon">🏠</span>
+      <span>HOME</span>
+    </a>
+    <a href="#" class="nav-item">
+      <span class="icon">🎮</span>
+      <span>PERMAINAN</span>
+    </a>
+    <a href="#" class="nav-item">
+      <span class="icon">🎁</span>
+      <span>PROMOSI</span>
+    </a>
+    <a href="#" class="nav-item">
+      <span class="icon">👥</span>
+      <span>REFERRAL</span>
+    </a>
+    <a href="#" class="nav-item">
+      <span class="icon">ℹ️</span>
+      <span>INFO</span>
+    </a>
+  </aside>
                 <!-- Provider Bar dengan Link -->
         <div class="provider-bar">
             <a href="pragmatic.html" class="provider-item active">
@@ -346,262 +325,109 @@
                 <span>nolimit city</span>
             </a>
         </div>
-        <!-- Content Area -->
-        <div class="content-box">
-            <div class="games-grid">
 
-                <!-- Game 1 -->
-                <a href="javascript:void(0);" onclick="openModal()" class="game-card">
-                    <div class="image-container">
-                        <span class="badge top">TOP</span>
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8Sjvhg1gwAe3M6a0-Z_AdWsBdXh79yQ0ZUr4SbpwkRA&s" alt="Gates of Olympus">
-                    </div>
-                    <div class="progress-container">
-                        <div class="progress-bar high" style="width: 98%;"></div>
-                        <div class="progress-text">98%</div>
-                    </div>
-                    <span class="game-title">Gates of Olympus</span>
-                </a>
+        <p class="subtext">Nilai dari RTP ini diambil dari persentase kemenangan member dan diperbarui secara otomatis.</p>
 
-                <!-- Game 2 -->
-                <a href="javascript:void(0);" onclick="openModal()" class="game-card">
-                    <div class="image-container">
-                        <span class="badge top">TOP</span>
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPVLtk3leg_am-NSoa5SHYD4WZBd0f5v7bM4jyla_Rgg&s" alt="Starlight Princess">
-                    </div>
-                    <div class="progress-container">
-                        <div class="progress-bar high" style="width: 96%;"></div>
-                        <div class="progress-text">96%</div>
-                    </div>
-                    <span class="game-title">Starlight Princess</span>
-                </a>
+  <!-- OVERLAY -->
+  <div id="overlay" class="overlay"></div>
 
-                <!-- Game 3 -->
-                <a href="javascript:void(0);" onclick="openModal()" class="game-card">
-                    <div class="image-container">
-                        <span class="badge top">TOP</span>
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzKgCFd0KkJxhA8CAkfZUapHTRrxeiMbmvZ5WSm5OjFw&s=10" alt="Sweet Bonanza">
-                    </div>
-                    <div class="progress-container">
-                        <div class="progress-bar high" style="width: 94%;"></div>
-                        <div class="progress-text">94%</div>
-                    </div>
-                    <span class="game-title">Sweet Bonanza</span>
-                </a>
-
-                <!-- Game 4 -->
-                <a href="javascript:void(0);" onclick="openModal()" class="game-card">
-                    <div class="image-container">
-                        <span class="badge">NEW</span>
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0GGEekievH-boGg3JEeSQIN5JPtnT_NcWdkCFekcZ2A&s=10" alt="Sugar Rush">
-                    </div>
-                    <div class="progress-container">
-                        <div class="progress-bar high" style="width: 91%;"></div>
-                        <div class="progress-text">91%</div>
-                    </div>
-                    <span class="game-title">Sugar Rush</span>
-                </a>
-
-                <!-- Game 5 -->
-                <a href="javascript:void(0);" onclick="openModal()" class="game-card">
-                    <div class="image-container">
-                        <span class="badge top">TOP</span>
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQt_x3exi15pnwvsJ5NBor_8JOUk6E4MkG9UwKGm6hy9g&s=10" alt="Wild West Gold">
-                    </div>
-                    <div class="progress-container">
-                        <div class="progress-bar high" style="width: 89%;"></div>
-                        <div class="progress-text">89%</div>
-                    </div>
-                    <span class="game-title">Wild West Gold</span>
-                </a>
-
-                <!-- Game 6 -->
-                <a href="javascript:void(0);" onclick="openModal()" class="game-card">
-                    <div class="image-container">
-                        <span class="badge">VIRAL</span>
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQixjLD0WlezJR7MXfo32LQpoGuoMOZAEtBF467BKZ3hQ&s=10" alt="Aztec Gems">
-                    </div>
-                    <div class="progress-container">
-                        <div class="progress-bar high" style="width: 86%;"></div>
-                        <div class="progress-text">86%</div>
-                    </div>
-                    <span class="game-title">Aztec Gems</span>
-                </a>
-
-                <!-- Game 7 -->
-               <a href="javascript:void(0);" onclick="openModal()" class="game-card">
-                    <div class="image-container">
-                        <span class="badge">NEW</span>
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhGFI5TsoHDOfCi6mr4EZFBc4yCxmZoF41J9TBKBwCHw&s=10" alt="Starlight Princess 1000">
-                    </div>
-                    <div class="progress-container">
-                        <div class="progress-bar high" style="width: 83%;"></div>
-                        <div class="progress-text">83%</div>
-                    </div>
-                    <span class="game-title">Starlight Princess 1000</span>
-                </a>
-
-                <!-- Game 8 -->
-                <a href="javascript:void(0);" onclick="openModal()" class="game-card">
-                    <div class="image-container">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5U0z8sbalhHsUJgD7CiLjTTw2pkUPj_McUY_zqP2l6Q&s=10" alt="Gates of Gatot Kaca">
-                    </div>
-                    <div class="progress-container">
-                        <div class="progress-bar high" style="width: 80%;"></div>
-                        <div class="progress-text">80%</div>
-                    </div>
-                    <span class="game-title">Gates of Gatot Kaca</span>
-                </a>
-
-                <!-- Game 9 -->
-                <a href="javascript:void(0);" onclick="openModal()" class="game-card">
-                    <div class="image-container">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsKxQDCBQF32RzyRrN_527v3TYQmG2-OSR9tKtcUpo3g&s" alt="5 Lions Megaways">
-                    </div>
-                    <div class="progress-container">
-                        <div class="progress-bar medium" style="width: 77%;"></div>
-                        <div class="progress-text">77%</div>
-                    </div>
-                    <span class="game-title">5 Lions Megaways</span>
-                </a>
-
-                <!-- Game 10 -->
-                <a href="javascript:void(0);" onclick="openModal()" class="game-card">
-                    <div class="image-container">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSM5yBvzIxEc8ntW0-6ufIfv6VXh9y1w56zgP5rMfPxtw&s=10" alt="Joker's Jewels">
-                    </div>
-                    <div class="progress-container">
-                        <div class="progress-bar medium" style="width: 74%;"></div>
-                        <div class="progress-text">74%</div>
-                    </div>
-                    <span class="game-title">Joker's Jewels</span>
-                </a>
-
-                <!-- Game 11 -->
-                <a href="javascript:void(0);" onclick="openModal()" class="game-card">
-                    <div class="image-container">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuxPcI9c6bNB9ELrDmqqfPkRXRB_5oC0XGk3ngoyWaBA&s" alt="Big Bass Bonanza">
-                    </div>
-                    <div class="progress-container">
-                        <div class="progress-bar medium" style="width: 71%;"></div>
-                        <div class="progress-text">71%</div>
-                    </div>
-                    <span class="game-title">Big Bass Bonanza</span>
-                </a>
-
-                <!-- Game 12 -->
-                <a href="javascript:void(0);" onclick="openModal()" class="game-card">
-                    <div class="image-container">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCDveF9XWy0gDdGe2TDvnJDAHpQPfn_cRUNL0xEQOBOg&s=10" alt="Cleocatra">
-                    </div>
-                    <div class="progress-container">
-                        <div class="progress-bar medium" style="width: 68%;"></div>
-                        <div class="progress-text">68%</div>
-                    </div>
-                    <span class="game-title">Cleocatra</span>
-                </a>
-
-                <!-- Game 13 -->
-                <a href="javascript:void(0);" onclick="openModal()" class="game-card">
-                    <div class="image-container">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLOKXhU8fRDlwOa24AUgg9sl9acAzm67oJJddK6rNufQ&s" alt="Fruit Party">
-                    </div>
-                    <div class="progress-container">
-                        <div class="progress-bar medium" style="width: 65%;"></div>
-                        <div class="progress-text">65%</div>
-                    </div>
-                    <span class="game-title">Fruit Party</span>
-                </a>
-
-                <!-- Game 14 -->
-                <a href="javascript:void(0);" onclick="openModal()" class="game-card">
-                    <div class="image-container">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLE9FplqWwE155b4iwIR9Gg_p8fK3Nqpt-UyyJ6irCJg&s=10" alt="The Dog House">
-                    </div>
-                    <div class="progress-container">
-                        <div class="progress-bar medium" style="width: 62%;"></div>
-                        <div class="progress-text">62%</div>
-                    </div>
-                    <span class="game-title">The Dog House</span>
-                </a>
-
-                <!-- Game 15 -->
-                <a href="javascript:void(0);" onclick="openModal('https://encrypted-tbn0.gstatic.com/images?q=tbn:AND9GcSfJEZmLr1sQLSPI5DiyYINLHoGavifTJOq_FTmhQAaUA&s=10', 'Pyramid Bonanza')" class="game-card">
-                    <div class="image-container">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfJEZmLr1sQLSPI5DiyYINLHoGavifTJOq_FTmhQAaUA&s=10" alt="Pyramid Bonanza">
-                    </div>
-                    <div class="progress-container">
-                        <div class="progress-bar medium" style="width: 60%;"></div>
-                        <div class="progress-text">60%</div>
-                    </div>
-                     <span class="game-title">Pyramid Bonanza</span>
-    </a>
-<script src="script.js"></script>
-    <script>
-// Fungsi untuk menampilkan Pop-up dinamis sesuai game yang diklik
-function openModal(imageSrc, gameTitle) {
-    updatePattern(); // Mengacak/memperbarui pola saat diklik
+  <!-- MAIN CONTENT -->
+  <main class="container">
+    <div class="section-title">Pragmatic Play Hari Ini</div>
     
-    // Update Gambar dan Judul jika data dikirim
-    if (imageSrc) document.getElementById('gameImg').src = imageSrc;
-    if (gameTitle) document.getElementById('gameTitle').innerText = gameTitle;
-    
-    document.getElementById('popupModal').style.display = 'flex';
-}
-        }
-
-        // Data pilihan pola acak
-        const icons = ['❌', '✅'];
-        const dcOptions = ['DC Off', 'DC On'];
-        const counts = [20, 30, 50, 70, 100, 500];
-
-        // Fungsi untuk meng-generate 4 baris pola secara acak
-        function generateRandomPola() {
-            let html = '';
-            for (let i = 0; i < 4; i++) {
-                const icon1 = icons[Math.floor(Math.random() * icons.length)];
-                const icon2 = icons[Math.floor(Math.random() * icons.length)];
-                const icon3 = icons[Math.floor(Math.random() * icons.length)];
-                const count = counts[Math.floor(Math.random() * counts.length)];
-                const dc = dcOptions[Math.floor(Math.random() * dcOptions.length)];
-
-                html += `<li>${icon1} - ${icon2} - ${icon3} - ${count} - ${dc}</li>`;
-            }
-            return html;
-        }
-
-        // Fungsi untuk mengacak RTP (rentang 75% - 98%)
-        function generateRandomRTP() {
-            return Math.floor(Math.random() * (98 - 75 + 1)) + 75;
-        }
-
-        // Memperbarui isi pop-up
-        function updatePattern() {
-            document.getElementById('polaContainer').innerHTML = generateRandomPola();
-            document.getElementById('rtpVal').innerText = generateRandomRTP() + ' %';
-        }
-
-        // Tutup Modal
-        function closeModal() {
-            document.getElementById('popupModal').style.display = 'none';
-        }
-
-        // Jalankan saat halaman pertama kali dimuat
-        updatePattern();
-
-        // Timer ganti pola otomatis setiap 10 menit (600.000 ms)
-        setInterval(updatePattern, 10 * 60 * 1000);
-    </script>
-                
+    <div class="game-grid" id="gameGrid">
+      <!-- Game cards diproduksi lewat JavaScript -->
+    </div>
+  </main>
 
 <script>
-document.addEventListener("DOMContentLoaded", function() {
-  // Mengubah semua link yang memiliki class "game-card"
-  const targetLinks = document.querySelectorAll("a.game-card");
-  
-  targetLinks.forEach(link => {
-    link.href = "javascript:void(0);"
-  });
-});
+  // DATA GAME PRAGMATIC PLAY INITIAL
+  let games = [
+    { id: 1, name: "Gates of Olympus", rtp: 98, badge: "HOT", img: "https://dsuown9evwz4y.cloudfront.net/Images/providers/PP/vs20olympx.jpg" },
+    { id: 2, name: "Gates of Olympus", rtp: 70, badge: "HOT", img: "https://picsum.photos/200/150?random=2" },
+    { id: 3, name: "Gates of Olympus", rtp: 88, badge: "HOT", img: "https://picsum.photos/200/150?random=3" },
+    { id: 4, name: "Gates of Olympus", rtp: 75, badge: "HOT", img: "https://picsum.photos/200/150?random=4" },
+    { id: 5, name: "Gates of Olympus", rtp: 65, badge: "HOT", img: "https://picsum.photos/200/150?random=5" },
+    { id: 6, name: "Gates of Olympus", rtp: 88, badge: "HOT", img: "https://picsum.photos/200/150?random=6" },
+    { id: 7, name: "Gates of Olympus", rtp: 76, badge: "HOT", img: "https://picsum.photos/200/150?random=7" },
+    { id: 8, name: "Gates of Olympus", rtp: 78, badge: "HOT", img: "https://picsum.photos/200/150?random=8" },
+    { id: 9, name: "Gates of Olympus", rtp: 98, badge: "HOT", img: "https://picsum.photos/200/150?random=9" },
+    { id: 10, name: "Starlight Princess", rtp: 95, badge: "TOP", img: "https://picsum.photos/200/150?random=10" },
+    { id: 11, name: "Sweet Bonanza", rtp: 91, badge: "POPULAR", img: "https://picsum.photos/200/150?random=11" },
+    { id: 12, name: "Sugar Rush", rtp: 88, badge: "HOT", img: "https://picsum.photos/200/150?random=12" },
+    { id: 13, name: "Wild West Gold", rtp: 82, badge: "NEW", img: "https://picsum.photos/200/150?random=13" },
+    { id: 14, name: "Aztec Gems", rtp: 75, badge: "MINI", img: "https://picsum.photos/200/150?random=14" },
+    { id: 15, name: "Power of Thor", rtp: 68, badge: "EPIC", img: "https://picsum.photos/200/150?random=15" },
+    { id: 16, name: "Joker's Jewels", rtp: 60, badge: "CLASSIC", img: "https://picsum.photos/200/150?random=16" }
+  ];
+
+  const gameGrid = document.getElementById('gameGrid');
+
+  // FUNGSI MENENTUKAN WARNA BAR
+  function getRtpColor(rtp) {
+    if (rtp >= 90) return '#00c853'; // Hijau (Tinggi)
+    if (rtp >= 75) return '#ffab00'; // Kuning (Sedang)
+    return '#d50000'; // Merah (Rendah)
+  }
+
+  // FUNGSI RENDER GAME KE HALAMAN
+  function renderGames() {
+    gameGrid.innerHTML = '';
+    games.forEach(game => {
+      const color = getRtpColor(game.rtp);
+const cardHTML = `
+<a href="https://magnumbetasli.com/" target="_blank" style="text-decoration: none; color: inherit; display: block;">    
+      <div class="game-card">
+      <div class="game-img" style="background-image: url('${game.img}')">
+        <span class="badge">${game.badge}</span>
+      </div>
+      <div class="game-info">
+        <div class="game-name">${game.name}</div>
+        <div class="rtp-container">
+          <div class="rtp-bar" style="width: ${game.rtp}%; background-color: ${color}"></div>
+          <div class="rtp-text">RTP ${game.rtp}%</div>
+        </div>
+      </div>
+    </div>
+  </a>
+`;
+      gameGrid.innerHTML += cardHTML;
+    });
+  }
+
+  // FUNGSI UPDATE RTP SECARA ACAK (Rentang 60% - 98%)
+  function updateRTP() {
+    games = games.map(game => {
+      // Menghasilkan angka acak antara 60 dan 98
+      const randomRTP = Math.floor(Math.random() * (98 - 60 + 1)) + 60;
+      return { ...game, rtp: randomRTP };
+    });
+    
+    // Tampilkan ulang game dengan data RTP baru
+    renderGames();
+    console.log("RTP berhasil diperbarui secara otomatis!");
+  }
+
+  // TAMPILKAN GAME PERTAMA KALI
+  renderGames();
+
+  // ATUR TIMER: 20 Menit = 20 * 60 * 1000 ms = 1.200.000 ms
+  const TWENTY_MINUTES = 20 * 60 * 1000;
+  setInterval(updateRTP, TWENTY_MINUTES);
+
+  // LOGIKA SIDEBAR TOGGLE
+  const hamburgerBtn = document.getElementById('hamburgerBtn');
+  const sidebar = document.getElementById('sidebar');
+  const overlay = document.getElementById('overlay');
+
+  function toggleMenu(e) {
+    if (e) e.stopPropagation();
+    sidebar.classList.toggle('active');
+    overlay.classList.toggle('active');
+  }
+
+  hamburgerBtn.addEventListener('click', toggleMenu);
+  overlay.addEventListener('click', toggleMenu);
 </script>
 </body>
+</html>
